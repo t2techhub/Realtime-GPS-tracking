@@ -1,0 +1,1 @@
+(function(){'use strict';var a=self.location.search.slice(1);a&&(self.addEventListener('message',function(a){var b=a.data;if(b&&'common-worker-connect'===b.type){var c=self.CustomEvent||self.Event||a.__proto__.__proto__.constructor,d=new c('connect');d.ports=a.ports,self.dispatchEvent(d)}}.bind(this)),self.importScripts(a))})();

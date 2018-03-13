@@ -1,0 +1,58 @@
+{
+  "rules": {
+	"analytics":{
+		"device":{
+			".read": true,
+			".write": "auth !== null",
+		},
+		"user":{
+			".read": true,
+			".write": "auth !== null",
+			"$uid": {
+				//".validate": "root.child('user_devices').child($uid).exists()",
+				"device":{
+					".read": true,
+					".write": "auth !== null",
+					},
+      }
+		},
+	},
+	"geo_devices":{
+		 ".write":true,
+			"$deviceid":{
+				".read": "(root.child('user_devices').child(auth.uid).child($deviceid).exists())||(root.child('public_devices').child($deviceid).exists())",
+				".validate": "((auth !== null)&&(root.child('user_devices').child(auth.uid).child($deviceid).exists()))||((auth === null)&&(newData.hasChild('user'))&&(root.child('user_devices').child(newData.child('user').val()).child($deviceid).exists()))",//Sau khi ghi lan dau thi nguoi khac co the ghi duoc do user da ton tai
+				
+         
+      }
+		
+	},
+   "public_devices":{
+    ".read": true,
+    ".write": "auth != null",
+      "$deviceid":{
+    ".validate": "root.child('user_devices').child(auth.uid).child($deviceid).exists()",//only owner can edit
+      }
+      },
+	"map":{
+		".read": true,
+	},
+	"user_device_group":{
+		".read": "auth != null",
+		".write": "auth != null",
+	},
+    "user_devices": {
+      ".read": "auth != null",
+      "$uid": {
+      ".write": "auth.uid === $uid",
+			"$deviceid":{
+          "group_type":{
+						//".validate": "newData.child('key').val() ==='-L1voHz82NeaUjZIs9h4'",
+						".validate": "newData.parent().parent().parent().parent().child('user_device_group/'+auth.uid+'/'+newData.child('key').val()).exists()",
+						//".validate":"root.child('user_device_group/'+auth.uid+'/'+newData.child('key').val()).exists()",
+						}
+          }
+      }
+    },
+  }
+}
