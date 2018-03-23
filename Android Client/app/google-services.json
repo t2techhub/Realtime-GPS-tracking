@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "964265211819",
+    "firebase_url": "https://gps-tracking-arduino.firebaseio.com",
+    "project_id": "gps-tracking-arduino",
+    "storage_bucket": "gps-tracking-arduino.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964265211819:android:6cc3942dcfe19013",
+        "android_client_info": {
+          "package_name": "xyz.vidieukhien.locationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964265211819-ta69gdnd4jol7oqq3qse55q52p62hm9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Ka463kb3pKrt2-A3Ew3NFsO2ZIagC9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964265211819:android:6ab0219bbdfdda01",
+        "android_client_info": {
+          "package_name": "xyz.vidieukhien.gpsrealtimelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964265211819-ta69gdnd4jol7oqq3qse55q52p62hm9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Ka463kb3pKrt2-A3Ew3NFsO2ZIagC9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

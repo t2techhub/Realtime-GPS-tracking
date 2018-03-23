@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="textPrimary">@color/white</color>
+
+    <color name="material_deep_purple_50">#EDE7F6</color>
+    <color name="material_deep_purple_500">#673AB7</color>
+    <color name="material_deep_purple_700">#512DA8</color>
+
+    <color name="material_green_50">#E8F5E9</color>
+    <color name="material_green_500">#4CAF50</color>
+    <color name="material_green_700">#388E3C</color>
+    <color name="material_green_300">#AED581</color>
+
+    <color name="material_gray_300">#E0E0E0</color>
+    <color name="material_gray_500">#9e9e9e</color>
+
+    <color name="material_lime_a700">#AEEA00</color>
+    <color name="material_purple_a700">#AA00FF</color>
+    <color name="material_red_a200">#FF5252</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_background">@color/io_main3</color>
+    <!-- I/O color schemes -->
+    <color name="io_main1">#0E9AAD</color>
+    <color name="io_main2">#5D6ABF</color>
+    <color name="io_main3">#445963</color>
+    <color name="io_grays1">#EBEEF0</color>
+    <color name="io_grays2">#AFBDC4</color>
+    <color name="io_accent1">#FF5151</color>
+    <color name="io_accent2">#8CEDEA</color>
+    <color name="io_accent3">#4CCFE0</color>
+    <color name="io_accent4">#7BB241</color>
+    <color name="io_accent5">#FFC927</color>
+    <color name="io_accent6">#7885CA</color>
+
+
+</resources>
